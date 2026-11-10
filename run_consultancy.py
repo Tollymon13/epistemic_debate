@@ -183,6 +183,7 @@ class ConsultancyRunner:
                 'gpt4o': 'openai',
                 'claude': 'anthropic',
                 'qwen': 'sglang',
+                'llama': 'sglang',
                 'deepseek': 'azure'
             }
             
@@ -331,11 +332,11 @@ def main():
                        required=True,
                        help='Dataset to use')
     parser.add_argument('--consultant-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for consultant')
     parser.add_argument('--judge-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for judge')
     parser.add_argument('--judge-prolific-id',

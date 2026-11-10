@@ -94,6 +94,7 @@ class InitialJudgementRunner:
                 'gpt4o': 'azure',
                 'claude': 'anthropic',
                 'qwen': 'sglang',
+                'llama': 'sglang',
                 'deepseek': 'azure'
             }
             
@@ -193,7 +194,7 @@ def main():
                        required=True,
                        help='Which folder to grab the claims from')
     parser.add_argument('--judge-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for judge')
     parser.add_argument('--personas-path',

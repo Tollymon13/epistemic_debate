@@ -16,8 +16,8 @@ consultant:
   sglang:
     name: "Consultant"
     provider: "sglang"
-    model: "Qwen/Qwen2.5-7B-Instruct"
-    port: 30005
+    model: "meta-llama/Llama-3.1-70B-Instruct"
+    port: 8000
     max_retries: 3
     temperature: 0.2
     
@@ -47,8 +47,8 @@ consultant_judge:
   sglang:
     name: "Consultant Judge"
     provider: "sglang"
-    model: "Qwen/Qwen2.5-7B-Instruct"
-    port: 30005
+    model: "meta-llama/Llama-3.1-70B-Instruct"
+    port: 8000
     max_retries: 3
     temperature: 0
   azure:
@@ -81,8 +81,8 @@ debaters:
     sglang:
       name: "Debater A"
       provider: "sglang"
-      model: "Qwen/Qwen2.5-7B-Instruct"
-      port: 30005
+      model: "meta-llama/Llama-3.1-70B-Instruct"
+      port: 8000
       temperature: 0.2
       max_retries: 3
     azure:
@@ -109,8 +109,8 @@ debaters:
     sglang:
       name: "Debater B"
       provider: "sglang"
-      model: "Qwen/Qwen2.5-7B-Instruct"
-      port: 30005
+      model: "meta-llama/Llama-3.1-70B-Instruct"
+      port: 8000
       temperature: 0.2
       max_retries: 3
     azure:
@@ -138,8 +138,8 @@ debate_judge:
   sglang:
     name: "Debate Judge"
     provider: "sglang"
-    model: "Qwen/Qwen2.5-7B-Instruct"
-    port: 30005
+    model: "meta-llama/Llama-3.1-70B-Instruct"
+    port: 8000
     temperature: 0
     max_retries: 3
   azure:

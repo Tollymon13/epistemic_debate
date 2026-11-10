@@ -270,6 +270,7 @@ class DebateRunner:
                 'gpt4o': 'openai',
                 'claude': 'anthropic',
                 'qwen': 'sglang',
+                'llama': 'sglang',
                 'deepseek': 'azure'
             }
             
@@ -300,15 +301,15 @@ def main():
                        required=True,
                        help='Dataset to use')
     parser.add_argument('--debater-a-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for first debater')
     parser.add_argument('--debater-b-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for second debater')
     parser.add_argument('--judge-model',
-                       choices=['gpt4o', 'claude', 'qwen', 'deepseek'],
+                       choices=['gpt4o', 'claude', 'qwen', 'llama', 'deepseek'],
                        required=True,
                        help='Model for judge')
     parser.add_argument('--judge-prolific-id',
